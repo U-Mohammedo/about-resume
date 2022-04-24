@@ -1,0 +1,177 @@
+* {
+  margin: 0 auto;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+}
+
+/* header start */
+header {
+  height: 100vh;
+}
+
+.name {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 1.3em;
+  letter-spacing: 0.15em; */
+  text-transform: capitalize;
+}
+
+.intro {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 13%;
+  font-size: 1.2em;
+}
+/* header end */
+
+/* main start */
+#img {
+  background-image: url('pexels-niko-twisty-4048182.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+#about {
+  height: 100vh;
+  font-size: 1.2em;
+  line-height: 1.1em;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+/* main end */
+
+/* section start */
+section {
+  font-size: 1.1em;
+}
+
+.heading {
+  padding: 10px 0;
+}
+
+#resume {
+  padding: 1em 0 0 0;
+  background: aliceblue;
+}
+
+.credentials > p,
+.sub-heading {
+  font-weight: bold;
+}
+
+.blocks {
+  display: grid;
+  padding: 1em 5%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.item {
+  margin: 1em 0;
+}
+
+.heading,
+.credentials > p {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#services {
+  padding: 2em 5%;
+}
+
+.info > p {
+  padding: 0 0 3em 0;
+  line-height: 1.6em;
+  word-spacing: 0.12em;
+}
+
+.info > ul > li {
+  padding: 5px 0;
+}
+/* section end */
+
+/* footer start */
+footer > p {
+  padding: 2em 0;
+  background: aliceblue;
+  text-align: center;
+  font-size: 1.5em;
+}
+/* footer end */
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .name {
+    font-size: 1.3em;
+    letter-spacing: 0.15em;
+  }
+
+  .intro {
+    font-size: 2em;
+  }
+
+  #about {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+
+  #services {
+    padding: 2em 7px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #resume {
+    background: aliceblue;
+    padding: 2em 7px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blocks {
+    display: grid;
+    padding: 2.3em 0;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .item {
+    margin: 1em 0;
+  }
+
+  .item > p {
+    line-height: 1.4em;
+  }
+
+  .heading,
+  .credentials > p {
+    font-size: 1.7em;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1178px) {
+}
